@@ -27,7 +27,7 @@ class Character(pygame.sprite.Sprite):
 
         self.image = self.current_animation[self.current_frame]
         self.rect = self.image.get_rect(topleft=(x, y))
-        self.hitbox = self.rect.inflate(-self.rect.width * 0.3, -self.rect.height * 0.1)  # Smaller hitbox
+        self.hitbox = self.rect.inflate(-self.rect.width * 0.3, -self.rect.height * 0.1)  
 
         self.vel_y = 0
         self.jump = False
